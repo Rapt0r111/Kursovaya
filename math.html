@@ -1,0 +1,135 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/styles.css" rel="stylesheet">
+    <link href="/static/css/test.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico"/>
+    <script src="/static/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/static/css/load-icon.css">
+     
+    
+    <title>Теория вероятностей и математическая статистика</title>
+    <script src="/static/js/theme-switcher.js"></script>
+    
+</head>
+<body onload="load_checkbox();">
+    <header class="p-3 bg-header">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="/" class="nav-link px-2 text-secondary">Главная страница</a></li>
+              <li><a href="/top-page" class="nav-link px-2 txt-color-white" >Покупка</a></li>
+              <li><a href="/about" class="nav-link px-2 txt-color-white" >О сайте</a></li>
+            </ul>
+           
+              <div class="d-flex"  style="margin-left: auto;">
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+            <div class="text-end d-flex align-items-center">
+                
+                <div class="dropdown">
+                  <svg class="pl" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;top: 0px;/* left: 60px; */;left: 0px; z-index: 1;">
+                    <defs>
+                      <linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="hsl(193,90%,55%)"></stop>
+                        <stop offset="100%" stop-color="hsl(223,90%,55%)"></stop>
+                      </linearGradient>
+                    </defs>
+                    <circle style="visibility: hidden;" class="pl__ring" r="56" cx="64" cy="64" fill="none" stroke="hsla(0,10%,10%,0.1)" stroke-width="16" stroke-linecap="round"></circle>
+                    <path class="pl__worm" d="M92,15.492S78.194,4.967,66.743,16.887c-17.231,17.938-28.26,96.974-28.26,96.974L119.85,59.892l-99-31.588,57.528,89.832L97.8,19.349,13.636,88.51l89.012,16.015S81.908,38.332,66.1,22.337C50.114,6.156,36,15.492,36,15.492a56,56,0,1,0,56,0Z" fill="none" stroke="url(#pl-grad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="44 1111" stroke-dashoffset="10"></path>
+                  </svg>
+                    <span class="inline-icon" style="    width: 45px;height: 45px;animation-name: bump;animation-timing-function: linear; animation-duration: 3s; animation-iteration-count: infinite;"><img style="min-width:45px; min-height:45px; max-width:45px; object-fit: cover; max-height: 45px; border-radius:25px;" src="/media/images/avatars/4fe8e99fb1e9d9fcab0650e12d49aa12.jpg" ></span>
+                          <div class="dropdown-content">
+                              <a href="/profile" >Профиль</a>
+                              <a href="/edit/0cab2f14-7356-4bda-91f6-283e658d20a5">Настройки</a>
+                              <a href="/lesson-view">Предметы</a>
+                              <a href="/logout">Выйти</a>
+                              <input class="switch-box" type="checkbox" id="switch" onclick="toggleTheme()" /><label class="switch-label i-block" for="switch"></label>
+                          </div>
+
+                    </div>
+                
+                </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    
+    <main class="main-cont">
+        <div class="courses-container">
+            
+            <div>
+            <div class="course">
+                <div class="course-preview" >
+                    <h4>Тема</h4>
+                    <h2>Учебные и учебно-методические пособия по дисциплине</h2>
+                    
+                    <div class="f-button p-2" style="display:inline-block">
+                        <a href="topic-edit.html">
+                            <span class="inline-icon" style="width: 32px; height: 32px;">
+                                <img style="min-width:32px; min-height:32px; max-width:32px; object-fit: cover; max-height: 432px;" src="/media/resources/icons/pen.png" >
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="course-info">
+                
+                    <div style="margin-bottom: 10px;"><a class="clear-link" href="/media/resources/lessons/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B_%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8_%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8_42022-05-04_215427.docx" style="display: flex;"><span class="inline-icon" style="background-image: url(/media/resources/icons/word.ico)"></span><h2 style="word-break:break-word">Методы математической обработки информации</h2></a></div>
+                    
+                    <div style="margin-bottom: 10px;"><a class="clear-link" href="/media/resources/lessons/%D0%9A%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0_42022-05-04_215427.docx" style="display: flex;"><span class="inline-icon" style="background-image: url(/media/resources/icons/word.ico)"></span><h2 style="word-break:break-word">Компьютерная математика</h2></a></div>
+                    
+                    <div style="margin-bottom: 10px;"><a class="clear-link" href="/media/resources/lessons/%D0%B3%D0%BB%D0%BE%D1%81%D0%B0%D1%80%D0%B8%D0%B9_%D0%BF%D0%BE_%D1%82%D0%B2_12022-05-04_215427.docx" style="display: flex;"><span class="inline-icon" style="background-image: url(/media/resources/icons/word.ico)"></span><h2 style="word-break:break-word">глосарий по тв</h2></a></div>
+                    
+                </div>
+
+            </div>
+
+                </div>
+            
+            <div>
+            <div class="course">
+                <div class="course-preview" >
+                    <h4>Тема</h4>
+                    <h2>Случайные события. Основные вероятностные схемы</h2>
+                    
+                    <div class="f-button p-2" style="display:inline-block">
+                        <a href="#" onclick="NotWorking()">
+                            <span class="inline-icon" style="width: 32px; height: 32px;">
+                                <img style="min-width:32px; min-height:32px; max-width:32px; object-fit: cover; max-height: 432px;" src="/media/resources/icons/pen.png" >
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="course-info">
+                
+                    <div style="margin-bottom: 10px;"><a class="clear-link" href="/media/resources/lessons/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F__752022-05-04_220149.doc" style="display: flex;"><span class="inline-icon" style="background-image: url(/media/resources/icons/word.ico)"></span><h2 style="word-break:break-word">Лекция № 75. Случайные события</h2></a></div>
+                    
+                    <div style="margin-bottom: 10px;"><a class="clear-link" href="/media/resources/lessons/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F__762022-05-04_220149.doc" style="display: flex;"><span class="inline-icon" style="background-image: url(/media/resources/icons/word.ico)"></span><h2 style="word-break:break-word">Лекция № 76. Вероятность события</h2></a></div>
+                    
+                    <div style="margin-bottom: 10px;"><a class="clear-link" href="/media/resources/lessons/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F__772022-05-04_220149.doc" style="display: flex;"><span class="inline-icon" style="background-image: url(/media/resources/icons/word.ico)"></span><h2 style="word-break:break-word">Лекция № 77. Теоремы теории вероятностей</h2></a></div>
+                    
+                    <div style="margin-bottom: 10px;"><a class="clear-link" href="/media/resources/lessons/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F__782022-05-04_220149.doc" style="display: flex;"><span class="inline-icon" style="background-image: url(/media/resources/icons/word.ico)"></span><h2 style="word-break:break-word">Лекция № 78. Следствия теорем ТВ</h2></a></div>
+                    
+                    <div style="margin-bottom: 10px;"><a class="clear-link" href="/media/resources/lessons/%D0%A0%D0%93%D0%A0_1_%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5_%D0%B2%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%BD%D1%8B%D0%B5_%D1%81%D1%85%D0%B5%D0%BC%D1%8B_52022-05-04_220149.docx" style="display: flex;"><span class="inline-icon" style="background-image: url(/media/resources/icons/word.ico)"></span><h2 style="word-break:break-word">РГР 1 Основные вероятностные схемы</h2></a></div>
+                    
+                    <div style="margin-bottom: 10px;"><a class="clear-link" href="/media/resources/lessons/%D0%9A%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%8F_%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_1_42022-05-04_220150.docx" style="display: flex;"><span class="inline-icon" style="background-image: url(/media/resources/icons/word.ico)"></span><h2 style="word-break:break-word">Компьютерная лабораторная работа 1</h2></a></div>
+                    
+                    <div style="margin-bottom: 10px;"><a class="clear-link" href="/media/resources/lessons/%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B_%D0%BA_%D1%8D%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D1%83_%D0%BF%D0%BE_%D1%82%D0%B5%D0%BC%D0%B5_1_12022-05-04_220150.docx" style="display: flex;"><span class="inline-icon" style="background-image: url(/media/resources/icons/word.ico)"></span><h2 style="word-break:break-word">Вопросы к экзамену по теме 1</h2></a></div>
+                    
+                </div>
+
+            </div>
+
+                </div>
+            
+	    </div>
+    </main>
+
+</body>
+</html>

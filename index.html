@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/styles.css" rel="stylesheet">
+    <link href="/static/css/test.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico"/>
+    <script src="/static/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/static/css/load-icon.css">
+     
+    
+    <title>Главная страница</title>
+    <script src="/static/js/theme-switcher.js"></script>
+    
+</head>
+<body onload="load_checkbox();">
+    <header class="p-3 bg-header">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="/" class="nav-link px-2 text-secondary">Главная страница</a></li>
+              <li><a href="top-page.html" class="nav-link px-2 txt-color-white" >Покупка</a></li>
+              <li><a href="about.html" class="nav-link px-2 txt-color-white" >О сайте</a></li>
+              <li><a href="404page.html" class="nav-link px-2 txt-color-white" style="opacity: .4;" >Страница 404</a></li>
+              <li><a href="sign-in.html" class="nav-link px-2 txt-color-white" style="opacity: .4;" >Вход</a></li>
+              <li><a href="sign-up.html" class="nav-link px-2 txt-color-white" style="opacity: .4;" >Регистрация</a></li>
+            </ul>
+           
+              <div class="d-flex"  style="margin-left: auto;">
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+            <div class="text-end d-flex align-items-center">
+                
+                <div class="dropdown">
+                  <svg class="pl" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;top: 0px;/* left: 60px; */;left: 0px; z-index: 1;">
+                    <defs>
+                      <linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="hsl(193,90%,55%)"></stop>
+                        <stop offset="100%" stop-color="hsl(223,90%,55%)"></stop>
+                      </linearGradient>
+                    </defs>
+                    <circle style="visibility: hidden;" class="pl__ring" r="56" cx="64" cy="64" fill="none" stroke="hsla(0,10%,10%,0.1)" stroke-width="16" stroke-linecap="round"></circle>
+                    <path class="pl__worm" d="M92,15.492S78.194,4.967,66.743,16.887c-17.231,17.938-28.26,96.974-28.26,96.974L119.85,59.892l-99-31.588,57.528,89.832L97.8,19.349,13.636,88.51l89.012,16.015S81.908,38.332,66.1,22.337C50.114,6.156,36,15.492,36,15.492a56,56,0,1,0,56,0Z" fill="none" stroke="url(#pl-grad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="44 1111" stroke-dashoffset="10"></path>
+                  </svg>
+                    <span class="inline-icon" style="    width: 45px;height: 45px;animation-name: bump;animation-timing-function: linear; animation-duration: 3s; animation-iteration-count: infinite;"><img style="min-width:45px; min-height:45px; max-width:45px; object-fit: cover; max-height: 45px; border-radius:25px;" src="/media/images/avatars/4fe8e99fb1e9d9fcab0650e12d49aa12.jpg" ></span>
+                          <div class="dropdown-content">
+                              <a href="profile.html" >Профиль</a>
+                              <a href="edit.html">Настройки</a>
+                              <a href="lesson-view.html">Предметы</a>
+                              <a href="#" onclick="NotWorking()">Выйти</a>
+                              <input class="switch-box" type="checkbox" id="switch" onclick="toggleTheme()" /><label class="switch-label i-block" for="switch"></label>
+                          </div>
+
+                    </div>
+                
+                </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    
+    <main class="main-cont">
+        <div class="card__container" id="card_cont">
+          
+            
+            <a href="#" onclick="NotWorking()" style="margin: 20px;">
+              <div class="card">
+                <div class="card__image-container">
+                  
+                    <img class="card__image" src="/media/images/lessons/64fd1cfc039d65f8dc402cf1027c8177.jpg" alt="" >
+                  
+                </div>
+                  <svg class="card__svg" viewBox="0 0 800 500">
+                    <path class="path_line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#222"/>
+                    <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+                  </svg>
+                  <h3 class="card__header">Дискретная математика (Не работает)</h3>
+              </div>
+            </a>
+            
+            <a href="#" onclick="NotWorking()" style="margin: 20px;">
+              <div class="card">
+                <div class="card__image-container">
+                  
+                    <img class="card__image" src="/media/images/lessons/e5d2cc760c1bce5e2329234b60865af7.jpg" alt="" >
+                  
+                </div>
+                  <svg class="card__svg" viewBox="0 0 800 500">
+                    <path class="path_line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#222"/>
+                    <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+                  </svg>
+                  <h3 class="card__header">Иностранный язык (Не работает)</h3>
+              </div>
+            </a>
+            
+            <a href="#" onclick="NotWorking()" style="margin: 20px;">
+              <div class="card">
+                <div class="card__image-container">
+                  
+                    <img class="card__image" src="/media/images/lessons/663a845ea11f30333103f229c0ed6403.jpg" alt="" >
+                  
+                </div>
+                  <svg class="card__svg" viewBox="0 0 800 500">
+                    <path class="path_line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#222"/>
+                    <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+                  </svg>
+                  <h3 class="card__header">Психология (Не работает)</h3>
+              </div>
+            </a>
+            
+            <a href="math.html" style="margin: 20px;">
+              <div class="card">
+                <div class="card__image-container">
+                  
+                    <img class="card__image" src="/media/images/lessons/ae1efdecb89b34e907d5ac9d8f258e6d.jpg" alt="" >
+                  
+                </div>
+                  <svg class="card__svg" viewBox="0 0 800 500">
+                    <path class="path_line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#222"/>
+                    <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+                  </svg>
+                  <h3 class="card__header">Теория вероятностей и математическая статистика</h3>
+              </div>
+            </a>
+            
+            <a href="#" onclick="NotWorking()" style="margin: 20px;">
+              <div class="card">
+                <div class="card__image-container">
+                  
+                    <img class="card__image" src="/media/images/lessons/da404bf7bd4398c9f256c65507d3c860.jpg" alt="" >
+                  
+                </div>
+                  <svg class="card__svg" viewBox="0 0 800 500">
+                    <path class="path_line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#222"/>
+                    <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+                  </svg>
+                  <h3 class="card__header">Технологии и методы программирования (Не работает)</h3>
+              </div>
+            </a>
+            
+
+          
+        </div>
+        
+    </main>
+<!--    <div class="text-center">-->
+<!--        -->
+<!--    </div>-->
+<script>
+    
+</script>
+
+</body>
+</html>

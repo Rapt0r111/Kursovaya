@@ -1,0 +1,76 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="/static/css/sign-style.css">
+</head>
+<body>
+  <div class="container">
+      <div class="login-wrap">
+          <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">регистрация</label>
+            <a href="sign-in.html"> <label style="cursor: pointer;" class="tab">Войти</label></a>
+            <form method="POST" action="" class="login-form">
+              <div class="group">
+                
+                
+              </div>
+              <input type="hidden" name="csrfmiddlewaretoken" value="MfwnG0SKTxQ3weFDbsEWdkI2iJbbMRlDkZePt851uLkWaXFjIccjzUym3ab4Bd7U">
+              
+
+                      <div class="group">
+                                      <label for="id_username" class="label">Имя пользователя</label>
+                          <input type="text" name="username" class="input" maxlength="150" required id="id_username">
+                      </div>
+
+              
+
+                      <div class="group">
+                                      <label for="id_email" class="label">Email</label>
+                          <input type="email" name="email" class="input" required id="id_email">
+                      </div>
+
+              
+
+                      <div class="group">
+                                      <label for="id_first_name" class="label">Имя</label>
+                          <input type="text" name="first_name" class="input" maxlength="150" id="id_first_name">
+                      </div>
+
+              
+
+                      <div class="group">
+                                      <label for="id_last_name" class="label">Фамилия</label>
+                          <input type="text" name="last_name" class="input" maxlength="150" id="id_last_name">
+                      </div>
+
+              
+
+                      <div class="group">
+                                      <label for="id_password1" class="label">Пароль</label>
+                          <input type="password" name="password1" class="input" required id="id_password1">
+                      </div>
+
+              
+
+                      <div class="group">
+                                      <label for="id_password2" class="label">Повторите пароль</label>
+                          <input type="password" name="password2" class="input" required id="id_password2">
+                      </div>
+
+              
+            <div class="group">
+                <button type="submit" class="button">Зарегистрироваться</button></div>
+          </form>
+          </div>
+      </div>
+
+  </div>
+</body>
+</html>
